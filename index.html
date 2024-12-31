@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Білизна для будівельників</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="forms.css">
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle">catalog</label>
+        <div id="catalog">
+            <menu>
+                <li>A: Alpha</li>
+                <li>B: Bravo</li>
+                <li>C: Charlie</li>
+                <li>D: Delta</li>
+                <li>E: Echo</li>
+                <li>F: Foxtrot</li>
+                <li>G: Golf</li>
+                <li>H: Hotel</li>
+                <li>I: India</li>
+                <li>J: Juliett</li>
+                <!-- <li>K: Kilo</li>
+                <li>L: Lima</li>
+                <li>M: Mike</li>
+                <li>N: November</li>
+                <li>O: Oscar</li>
+                <li>P: Papa</li>
+                <li>Q: Quebec</li>
+                <li>R: Romeo</li>
+                <li>S: Sierra</li>
+                <li>T: Tango</li>
+                <li>U: Uniform</li>
+                <li>V: Victor</li>
+                <li>W: Whiskey</li>
+                <li>X: X-ray</li>
+                <li>Y: Yankee</li>
+                <li>Z: Zulu</li> -->
+            </menu>
+            <ul>
+                <li>A: Alpha</li>
+                <li>B: Bravo</li>
+                <li>C: Charlie</li>
+                <li>D: Delta</li>
+                <li>E: Echo</li>
+                <li>F: Foxtrot</li>
+                <li>G: Golf</li>
+                <li>H: Hotel</li>
+                <li>I: India</li>
+                <li>J: Juliett</li>
+            </ul>
+        </div>
+        
+        <button id="ordering-open" onclick="this.nextElementSibling.showModal()">зробити замовлення</button>
+        
+        <dialog id="ordering-dialog" >
+            <form method="dialog">
+                <label for="city"> City </label>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected hidden>Select city</option>
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Lviv">Lviv</option>
+                    <option value="Odesa">Odesa</option>
+                    <option value="Kharkiv">Kharkiv</option>
+                </select>
+                <br>
+                <label for="delivery"> Delivery </label>
+                <input type="radio" name="delivery" id="delivery" value="courier">
+                <label for="delivery">Courier</label>
+                <input type="radio" name="delivery" id="delivery" value="post">
+                <label for="delivery">Post</label>
+                <br>
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="write your address" required>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="cancel">Cancel</button>
+                </div>
+        </dialog>
+
+        <input id="theme-toggle" type="checkbox" hidden>
+        <label for="theme-toggle">
+            <span class="light">Switch to dark</span>
+            <span class="dark">Switch to light</span>
+        </label>
+    </header>
+
+    <h1>Light to dark</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quis nam laborum, dignissimos culpa animi dolore
+        in
+        facilis deleniti vero necessitatibus explicabo, maiores suscipit autem officiis placeat recusandae, voluptas
+        adipisci.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+#catalog {
+    display: none;
+    align-items: start;
+    position: absolute;
+    top: 60px;
+
+    menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        max-width: 200px;
+        box-shadow: 0 5px 0 currentColor;
+        border-radius: 10px;
+        border-width: 3px;
+        border-style: solid;
+        background-color: rgb(188, 197, 131);
+        border-color: currentColor;
+        overflow: hidden;
+
+        li {
+            padding: 8px 16px;
+            border-bottom: 1px solid #3e0208;
+        }
+
+        li:hover {
+            background: rgb(217, 223, 177)
+        }
+    }
+
+    menu+ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        >li:not(:hover) {
+            display: none;
+        }
+    }
+
+    menu:has(>:nth-child(1):hover)+ul>:nth-child(1),
+    menu:has(>:nth-child(2):hover)+ul>:nth-child(2),
+    menu:has(>:nth-child(3):hover)+ul>:nth-child(3),
+    menu:has(>:nth-child(4):hover)+ul>:nth-child(4),
+    menu:has(>:nth-child(5):hover)+ul>:nth-child(5),
+    menu:has(>:nth-child(6):hover)+ul>:nth-child(6),
+    menu:has(>:nth-child(7):hover)+ul>:nth-child(7),
+    menu:has(>:nth-child(8):hover)+ul>:nth-child(8),
+    menu:has(>:nth-child(9):hover)+ul>:nth-child(9),
+    menu:has(>:nth-child(10):hover)+ul>:nth-child(10) {
+        display: block;
+
+    }
+}
+
+.cards {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+
+    .card {
+        background-color: rgb(217, 223, 177);
+        padding: 10px;
+        border-radius: 10px;
+        width: 20%;
+        height: 20vh;
+    }
+}

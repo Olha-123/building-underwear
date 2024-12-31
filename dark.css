@@ -1,0 +1,14 @@
+body:has(#theme-toggle:checked) {
+    background-color: rgb(33, 30, 30);
+    color: rgb(188, 197, 131);
+    
+    p {
+        background-color: rgb(35, 33, 33);
+        border-color: rgb(188, 197, 131);
+        
+    }
+}
+
+
+
+
